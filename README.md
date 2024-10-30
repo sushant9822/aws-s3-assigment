@@ -14,7 +14,7 @@ Follow these steps to set up and run the application on your local machine.
 1. **Clone the repository**  
    Clone the repository to your local machine:
    ```bash
-   git https://github.com/sushant9822/s3-assignment-aws.git
+   git clone https://github.com/sushant9822/aws-s3-assigment.git
    cd s3-assignment-aws
    ```
 
