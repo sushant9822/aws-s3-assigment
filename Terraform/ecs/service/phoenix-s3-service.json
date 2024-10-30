@@ -1,0 +1,40 @@
+[
+  {
+      "name": "s3-service",
+      "image": "930957670050.dkr.ecr.ap-south-1.amazonaws.com/phoenix-prod-s3-service",
+      "essential": true,
+      "logConfiguration": {
+          "logDriver": "awslogs",
+          "options": {
+              "awslogs-group": "/ecs/prod/s3-service",
+              "awslogs-region": "ap-south-1",
+              "awslogs-create-group": "true",
+              "awslogs-stream-prefix": "ecs"
+          }
+      },
+      "portMappings": [
+          {
+              "containerPort": 8000,
+              "hostPort": 8000
+          }
+      ],
+      "secrets": [
+          {
+              "name": "AWS_ACCESS_KEY_ID",
+              "valueFrom": "/prod/AWS_ACCESS_KEY_ID"
+          },
+          {
+              "name": "AWS_SECRET_ACCESS_KEY",
+              "valueFrom": "/prod/AWS_SECRET_ACCESS_KEY"
+          },
+          {
+              "name": "AWS_REGION",
+              "valueFrom": "/prod/AWS_REGION"
+          },
+          {
+              "name": "S3_BUCKET_NAME",
+              "valueFrom": "/prod/S3_BUCKET_NAME"
+          }
+      ]
+  }
+]
