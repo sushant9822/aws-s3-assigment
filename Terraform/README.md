@@ -6,12 +6,12 @@ This repository contains Terraform configurations for setting up a tiered archit
 
 ## Architecture Diagram
 
-![Architecture Diagram](https://github.com/sushant9822/s3-assignment-aws/blob/main/Terraform/s3-project.png)
+![Architecture Diagram](https://github.com/sushant9822/aws-s3-assigment/blob/main/Terraform/s3-project.png)
 
 ## Directory Structure
 
 The project is organized into directories representing different AWS services and components:
-![Directory Structure](https://github.com/sushant9822/s3-assignment-aws/blob/main/screenshots/terraform-structure.png)
+![Directory Structure](https://github.com/sushant9822/aws-s3-assigment/blob/main/screenshots/terraform-structure.png)
 - `loadbalancer` - Application Load Balancer
 - `ecr` - Amazon Elastic Container Registry
 - `ecs` - Amazon Elastic Container Service (clusters and services)
@@ -28,7 +28,7 @@ The project is organized into directories representing different AWS services an
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/sushant9822/s3-assignment-aws.git
+git clone https://github.com/sushant9822/aws-s3-assigment.git
 cd Terraform 
 ```
 ### Configuration
