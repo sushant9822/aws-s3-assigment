@@ -53,6 +53,19 @@ cd Terraform
    ```bash
    terraform apply
    ```
+# Alternative Option with minmal resources
+## Architecture Diagram EC2-ALB Setup
+
+![Architecture Diagram](https://github.com/sushant9822/aws-s3-assigment/blob/main/Terraform/ec2-arch.png)
+
+#### To use this option navigate to
+```bash
+cd EC2-ALB 
+terraform init
+terraform plan 
+terraform apply --auto-approve
+```
+#### NOTE: IN this Option I have written user_data script while EC2 Creation will take care of installing and running app in background
 
 
    
